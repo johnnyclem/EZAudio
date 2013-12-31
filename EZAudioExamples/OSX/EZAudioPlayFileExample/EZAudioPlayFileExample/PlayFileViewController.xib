@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment version="1070" identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
@@ -29,8 +29,7 @@
                     <rect key="frame" x="14" y="224" width="125" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="21" id="Lm5-0d-A72"/>
-                        <constraint firstAttribute="width" constant="113" id="Tij-5V-y1Q"/>
+                        <constraint firstAttribute="width" constant="113" id="gFY-VJ-2go"/>
                     </constraints>
                     <buttonCell key="cell" type="push" title="Choose File..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KLq-bf-Xkh">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -40,8 +39,8 @@
                         <action selector="openFile:" target="-2" id="3QB-hU-LDl"/>
                     </connections>
                 </button>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0eT-7c-7fJ">
-                    <rect key="frame" x="141" y="235" width="321" height="17"/>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0eT-7c-7fJ">
+                    <rect key="frame" x="139" y="235" width="323" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" title="Label" id="vXQ-HF-vLX">
                         <font key="font" metaFont="system"/>
@@ -52,10 +51,6 @@
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OQp-Lr-dlS">
                     <rect key="frame" x="14" y="191" width="125" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="21" id="geC-A9-48j"/>
-                        <constraint firstAttribute="width" constant="113" id="lc3-4H-QK6"/>
-                    </constraints>
                     <buttonCell key="cell" type="push" title="Play" alternateTitle="Pause" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Z2A-7U-sb6">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system"/>
@@ -79,7 +74,7 @@
                     </connections>
                 </segmentedControl>
                 <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CFP-v0-TzQ">
-                    <rect key="frame" x="18" y="159" width="444" height="21"/>
+                    <rect key="frame" x="18" y="159" width="444" height="20"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <sliderCell key="cell" alignment="left" maxValue="100" doubleValue="9.3380614657210401" tickMarkPosition="above" sliderType="linear" id="gPc-pN-dmP"/>
                     <connections>
@@ -88,22 +83,23 @@
                 </slider>
             </subviews>
             <constraints>
-                <constraint firstItem="CFP-v0-TzQ" firstAttribute="top" secondItem="OQp-Lr-dlS" secondAttribute="bottom" constant="20" id="6uf-rh-zEf"/>
-                <constraint firstItem="0eT-7c-7fJ" firstAttribute="leading" secondItem="2Ma-jj-U3z" secondAttribute="trailing" constant="10" id="AcA-Rv-Lwl"/>
-                <constraint firstItem="Lz1-Gs-1lD" firstAttribute="top" secondItem="CFP-v0-TzQ" secondAttribute="bottom" constant="13" id="JjU-ri-rxV"/>
-                <constraint firstItem="0eT-7c-7fJ" firstAttribute="top" secondItem="Xpo-HP-Ost" secondAttribute="top" constant="20" id="T86-Jj-i0N"/>
-                <constraint firstAttribute="bottom" secondItem="Lz1-Gs-1lD" secondAttribute="bottom" id="U2b-77-5uo"/>
-                <constraint firstAttribute="trailing" secondItem="bZW-tA-C61" secondAttribute="trailing" constant="20" id="UGO-OL-Dmk"/>
-                <constraint firstAttribute="trailing" secondItem="CFP-v0-TzQ" secondAttribute="trailing" constant="20" id="UpE-fD-Skp"/>
-                <constraint firstItem="2Ma-jj-U3z" firstAttribute="top" secondItem="Xpo-HP-Ost" secondAttribute="top" constant="20" id="a1a-7J-lzc"/>
-                <constraint firstItem="Lz1-Gs-1lD" firstAttribute="leading" secondItem="Xpo-HP-Ost" secondAttribute="leading" id="bZz-am-fqe"/>
-                <constraint firstItem="2Ma-jj-U3z" firstAttribute="leading" secondItem="Xpo-HP-Ost" secondAttribute="leading" constant="20" id="dc1-KX-H5W"/>
-                <constraint firstItem="OQp-Lr-dlS" firstAttribute="leading" secondItem="Xpo-HP-Ost" secondAttribute="leading" constant="20" id="g5e-2M-sHn"/>
-                <constraint firstAttribute="trailing" secondItem="Lz1-Gs-1lD" secondAttribute="trailing" id="jDC-Iz-9c4"/>
-                <constraint firstItem="bZW-tA-C61" firstAttribute="top" secondItem="0eT-7c-7fJ" secondAttribute="bottom" constant="16" id="ll5-1d-SaQ"/>
-                <constraint firstItem="CFP-v0-TzQ" firstAttribute="leading" secondItem="Xpo-HP-Ost" secondAttribute="leading" constant="20" id="qhq-Io-tdF"/>
-                <constraint firstItem="Lz1-Gs-1lD" firstAttribute="leading" secondItem="Xpo-HP-Ost" secondAttribute="leading" id="xtr-M9-Uot"/>
-                <constraint firstItem="OQp-Lr-dlS" firstAttribute="top" secondItem="2Ma-jj-U3z" secondAttribute="bottom" constant="12" id="yGn-40-QqT"/>
+                <constraint firstItem="2Ma-jj-U3z" firstAttribute="top" secondItem="0eT-7c-7fJ" secondAttribute="top" id="044-Uv-Rgw"/>
+                <constraint firstItem="2Ma-jj-U3z" firstAttribute="top" secondItem="Xpo-HP-Ost" secondAttribute="top" constant="20" symbolic="YES" id="1eh-mR-5xh"/>
+                <constraint firstItem="OQp-Lr-dlS" firstAttribute="trailing" secondItem="2Ma-jj-U3z" secondAttribute="trailing" id="28w-mb-4cP"/>
+                <constraint firstItem="bZW-tA-C61" firstAttribute="trailing" secondItem="CFP-v0-TzQ" secondAttribute="trailing" id="9F7-f8-FdA"/>
+                <constraint firstItem="Lz1-Gs-1lD" firstAttribute="leading" secondItem="Xpo-HP-Ost" secondAttribute="leading" id="Ccs-qf-HzY"/>
+                <constraint firstItem="bZW-tA-C61" firstAttribute="trailing" secondItem="0eT-7c-7fJ" secondAttribute="trailing" id="F9V-oZ-ywO"/>
+                <constraint firstItem="2Ma-jj-U3z" firstAttribute="leading" secondItem="OQp-Lr-dlS" secondAttribute="leading" id="FB2-35-gWp"/>
+                <constraint firstItem="bZW-tA-C61" firstAttribute="top" secondItem="OQp-Lr-dlS" secondAttribute="top" id="FeH-74-VyL"/>
+                <constraint firstItem="CFP-v0-TzQ" firstAttribute="centerX" secondItem="Lz1-Gs-1lD" secondAttribute="centerX" id="Ixr-gU-k6H"/>
+                <constraint firstAttribute="bottom" secondItem="Lz1-Gs-1lD" secondAttribute="bottom" id="ZCg-GO-kH7"/>
+                <constraint firstItem="Lz1-Gs-1lD" firstAttribute="top" secondItem="CFP-v0-TzQ" secondAttribute="bottom" constant="13" id="daf-Ag-PJy"/>
+                <constraint firstItem="2Ma-jj-U3z" firstAttribute="leading" secondItem="Xpo-HP-Ost" secondAttribute="leading" constant="20" symbolic="YES" id="ejr-Tw-Grf"/>
+                <constraint firstItem="CFP-v0-TzQ" firstAttribute="leading" secondItem="OQp-Lr-dlS" secondAttribute="leading" id="hMO-jk-zhz"/>
+                <constraint firstItem="OQp-Lr-dlS" firstAttribute="top" secondItem="2Ma-jj-U3z" secondAttribute="bottom" constant="12" symbolic="YES" id="jJO-1A-a8y"/>
+                <constraint firstAttribute="trailing" secondItem="0eT-7c-7fJ" secondAttribute="trailing" constant="20" symbolic="YES" id="nZy-5K-lKD"/>
+                <constraint firstItem="CFP-v0-TzQ" firstAttribute="top" secondItem="OQp-Lr-dlS" secondAttribute="bottom" constant="21" id="try-Zc-duW"/>
+                <constraint firstItem="0eT-7c-7fJ" firstAttribute="leading" secondItem="2Ma-jj-U3z" secondAttribute="trailing" constant="8" symbolic="YES" id="veL-RI-AMM"/>
             </constraints>
         </customView>
     </objects>
